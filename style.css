@@ -1,0 +1,274 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root{
+  --red-color:#e03434;
+  --orange-color:#eb6200;
+  --orange-light:#fc9745;
+  --gray-color:#b5b5b5;
+  --gray-txt:#737373;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #FEFEFE;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background-color: #fefefe;
+}
+
+.order_btn, .confirm_btn {
+  background-color: var(--orange-color);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 10px 28px;
+  transition: .3s;
+}
+
+.order_btn:hover, .confirm_btn:hover {
+  background-color: var(--orange-light);
+  color: white;
+}
+
+.banner {
+  text-align: center;
+  background-color: var(--red-color);
+  padding-top: 50px;
+}
+
+.banner_img {
+  width: 50%;
+  height: 50%;
+  margin-top: -20px;
+  filter: drop-shadow(25px 45px 30px #141414);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s; 
+}
+
+li > a:hover{
+  color: var(--red-color);
+}
+
+#title {
+  font-family: 'Comfortaa', cursive;
+  font-size: 80px;
+  font-weight: bold;
+  color: white;
+}
+
+#caption, .form-msg {
+  font-family: 'Comfortaa', cursive;
+  font-size: 24px;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#title-bottom, #title-font {
+  font-family: 'Comfortaa', cursive;
+  font-size: 45px;
+  font-weight: bold;  
+  order: 1;
+}
+
+#title-bottom{
+  color: black;
+}
+
+#instructions {
+  font-family: 'Comfortaa', cursive;
+  margin-top: 15px;
+  font-size: 16px;
+  color: black;
+  order: 2;
+}
+
+.line {
+  display: flex;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  align-items: center;
+  height: 2px;
+  width: 750px;
+  background: var(--gray-color);
+  order: 3;
+}
+
+.main-dish, .form-body {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+#step-title {
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+#step-inst {
+  font-family: 'Comfortaa', cursive;
+}
+
+.side-dish, .addons {
+  margin-top: 5rem;
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
+.caption, .form-txt {
+  font-family: 'Comfortaa', cursive;
+  font-weight: bold;
+}
+
+.caption{
+  text-align: center;  
+}
+
+.bottom {
+  margin-top: 4rem;
+  margin-bottom: 5rem;
+  margin-right: .5rem;
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: right;
+  /* float: right; */
+}
+
+th {
+  transition: transform .3s;
+}
+
+th:hover {
+  transform: scale(1.1);
+}
+
+.form-title{
+  display: flex;
+  height: 90px;
+  text-align: center;
+  justify-content:center;
+  align-items:center;
+  margin-bottom: 30px;
+  background-color: var(--red-color);
+}
+
+.form-title, footer{
+  width: 100%;
+  color: white;
+}
+
+.form-msg{
+  color: var(--red-color);
+  margin-bottom: 30px;
+}
+
+#title-font{
+  color: white;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: solid var(--gray-color) 0.5px;
+  font-family: 'Comfortaa', cursive;
+  resize: none;
+}
+input{
+  height: 40px;
+}
+input[type="text"]:focus, input[type="tel"]:focus, input[type="email"]:focus, textarea:focus{
+  outline: 2px solid var(--red-color);
+}
+
+small{
+  color: var(--gray-txt);
+}
+
+.required::after {
+  content: " *";
+  color: #d93236;
+  font-size: 17px;
+}
+
+.form-divided{
+  display: flex;
+  gap: 20px;
+}
+
+.form-input{
+  width: 50%;
+}
+
+input, textarea, .txtarea{
+  margin: 10px 0px;  
+}
+
+.media{
+  margin-top: 50px;
+}
+
+iframe{
+  display: block;
+  margin: 0 auto;
+}
+
+.vid {
+  margin-bottom: 30px;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(https://queen.jollibee.com.ph/2021/12/home_banner_1.png);
+  background-size: cover;
+  height: 400px;
+  padding-bottom: -5rem;
+}
+
+.logo-footer{
+  order: 1;
+  object-fit: cover;
+}
+
+.footer-items{
+  display: flex;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+.copyright {
+  order: 2;
+  padding-top: 10px;
+}

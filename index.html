@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+
+  <!--icons-->
+  <script src="https://kit.fontawesome.com/8dede97943.js" crossorigin="anonymous">  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Open+Sans:wght@400;800&display=swap"
+    rel="stylesheet">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jollibee Mix n' Match</title>
+  <link rel="icon" type="image/x-icon"
+    href="https://upload.wikimedia.org/wikipedia/en/thumb/8/84/Jollibee_2011_logo.svg/1200px-Jollibee_2011_logo.svg.png">
+</head>
+
+<body>
+  <!--header-->
+  <header class="top">
+    <img class="logo" src="https://1000logos.net/wp-content/uploads/2021/05/Jollibee-logo.png" height="10%" width="10%"
+      alt="logo">
+    <nav>
+      <ul class="nav_links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#footer">Contacts</a></li>
+        <li><a
+            href="https://www.philstar.com/lifestyle/on-the-radar/2023/04/17/2258920/make-your-own-sulit-sarap-meals-p75-jollibees-mix-match-combos"
+            target="_blank">Learn
+            more</a></li>
+        <li><a href="#reservation" class="btn order_btn">Reserve Now</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!--main banner-->
+  <div class="banner">
+    <h1 id="title">Mix & Match Combos</h1>
+    <p id="caption">Make your own Sulit-Sarap Combination starting at 75 pesos!</p>
+    <img class="banner_img" src="assets/cover.png" alt="banner">
+  </div>
+
+
+  <!--title1-->
+  <div class="menu" id="menu">
+    <h1 id="title-bottom">Start creating your own meal!</h1>
+    <p id="instructions">Choose your desired Jollibee meals from the choices below</p>
+    <div class="line"></div>
+  </div>
+
+
+  <!--menu table-->
+  <div class="main-dish">
+    <h2 id="step-title">Step 1</h2>
+    <p id="step-inst">Choose 1 Main</p>
+    <table id="tbl-main">
+      <tr>
+        <th><img src="assets/burger_steak.png" height="80%" width="80%"></th>
+        <th><img src="assets/spag.png" height="80%" width="80%"></th>
+        <th><img src="assets/yumburger.png" height="80%" width="80%"></th>
+        <th><img src="assets/tunapie.png" height="80%" width="80%"></th>
+      </tr>
+      <tr>
+        <td class="caption">Burger Steak</td>
+        <td class="caption">Jolly Spaghetti</td>
+        <td class="caption">Yumburger</td>
+        <td class="caption">Tuna Pie</td>
+      </tr>
+    </table>
+  </div>
+  <div class="side-dish">
+    <h2 id="step-title">Step 2</h2>
+    <p id="step-inst">Choose 1 Side</p>
+    <table id="tbl-side">
+      <tr>
+        <th><img src="assets/fries.png" height="80%" width="80%"></th>
+        <th><img src="assets/peachmangopie.png" height="80%" width="80%"></th>
+        <th><img src="assets/sundae.png" height="80%" width="80%"></th>
+        <th><img src="assets/float.png" height="80%" width="80%"></th>
+        <th><img src="assets/pineapple.png" height="80%" width="80%"></th>
+      </tr>
+      <tr>
+        <td class="caption">Jolly Crispy Fries</td>
+        <td class="caption">Peach Mango Pie</td>
+        <td class="caption">Jolly Sundae</td>
+        <td class="caption">Coke Float</td>
+        <td class="caption">Pineapple Juice</td>
+      </tr>
+    </table>
+  </div>
+  <div class="addons">
+    <table id="tbl-addons">
+      <h2 id="step-title">Optional</h2>
+      <p id="step-inst">Add-ons</p>
+      <tr>
+        <th><img src="assets/mains.png" height="80%" width="80%"></th>
+        <th><img src="assets/sides.png" height="80%" width="80%"></th>
+        <th><img src="assets/extra_rice.png" height="80%" width="80%"></th>
+        <th><img src="assets/upsize.png" height="80%" width="80%"></th>
+      </tr>
+      <tr>
+        <td class="caption">Add another Main Dish<br>Php45</td>
+        <td class="caption">Add another Side Dish<br>Php25</td>
+        <td class="caption">Extra Rice<br>Php30</td>
+        <td class="caption">Upsize your Drinks<br>Php15</td>
+      </tr>
+    </table>
+    <div class="bottom">
+      <a href="#" class="btn confirm_btn">Confirm Order</a>
+    </div>
+  </div>
+
+
+  <!-- Form -->
+  <div class="form-title" id="reservation">
+    <h1 id="title-font">Reservation</h1>
+  </div>
+  <div class="form-body">
+    <p class="form-msg">Book Your Table. Call us or complete the form below</p>
+
+    <form class="form-txt">
+      <label class="required" for="name">Full Name</label><br>
+      <input type="text" id="name" name="name" autocomplete="off" placeholder="Enter Full Name... " required
+        pattern="^[a-zA-Z ]*$"><br><br>
+
+
+      <label class="required" for="email">Email</label><br>
+      <input type="email" id="email" name="email" autocomplete="off" placeholder="Enter Email... "
+        pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required><br>
+      <small>Format: example@example.com</small><br><br>
+
+      <!-- row -->
+      <div class="form-divided">
+        <div class="form-input">
+          <label class="required" for="phone">Phone Number</label><br>
+          <input type="tel" id="phone" name="phone" autocomplete="off" placeholder="Enter PH phone number..." required
+            pattern="[0]{1}[9]{1}[0-9]{9}"><br>
+          <small>Format: 09XXXXXXXXX</small><br><br>
+        </div>
+        <div class="form-input">
+          <label class="required" for="date">Date</label><br>
+          <input type="date" id="date" name="date" required><br>
+        </div>
+      </div>
+
+      <div class="form-divided">
+        <div class="form-input">
+          <label class="required" for="time">Time</label><br>
+          <input type="time" name="time" value="22:00" />
+        </div>
+        <div class="form-input">
+          <label class="required" for="seats">Seats</label>
+          <input type="number" id="seats" name="seats" min="1" max="50" value="1" required><br>
+        </div>
+      </div>
+      <!-- row -->
+
+      <div class="txtarea">
+        <label for="message">Special Requests</label>
+        <small>(Optional)</small>
+        <textarea id="subject" name="message" autocomplete="off" rows="10" cols="50"
+          placeholder="Enter Your Message... "></textarea><br><br>
+      </div>
+      <input class="btn confirm_btn" type="submit">
+    </form>
+  </div>
+
+  <!-- Multimedia -->
+  <div class="form-title media">
+    <h1 id="title-font">Customer Reviews</h1>
+  </div>
+  <div class="vid">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mWzQDRo5hK4" title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <img class="logo-footer" src="assets/Jollibee-logo.png" height="150" width="15%" alt="logo-footer">
+    <h3 style="font-family: 'Comfortaa', cursive; color: #fefefe; font-size: 18px;">Contact Us</h3><br>
+    <div class="footer-items">
+      <i class="fa-solid fa-phone" style="color: #fefefe;"></i>
+      <p class="contact-info">(02) 8-7000</p>
+    </div>
+
+    <div class="footer-items">
+      <i class="fa-solid fa-envelope" style="color: #fefefe;"></i>
+      <p class="contact-info">feedback@jfc.com.ph</p>
+    </div>
+    <div class="footer-items">
+      <i class="fa-brands fa-facebook" style="color: #fefefe;"></i>
+      <p class="contact-info">Jollibee Philippines</p>
+    </div>
+    <div class="footer-items">
+      <i class="fa-brands fa-instagram" style="color: #fefefe;"></i>
+      <p class="contact-info">@jollibee</p>
+    </div>
+    <div class="footer-items" style="margin-bottom: 20px;">
+      <i class="fa-brands fa-twitter" style="color: #fefefe;"></i>
+      <p class="contact-info">@jollibee</p>
+    </div>
+
+    <div class="copyright">
+      <small style="color: #fefefe;" ty>© 2023 Jollibee Foods Corporation. All rights reserved.</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>
